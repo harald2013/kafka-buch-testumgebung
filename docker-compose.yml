@@ -1,5 +1,11 @@
 name: kafka-buch-testumgebung
 services:
+  kcat:
+    image: confluentinc/cp-kafkacat
+    container_name: kcat
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    command: bash
   controller-1:
     image: apache/kafka:latest
     container_name: controller-1

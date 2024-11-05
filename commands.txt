@@ -1,4 +1,17 @@
+docker compose up -d
+docker compose stop
+
+Connect to broker in Docker
 docker exec --workdir /opt/kafka/bin/ -it broker-1 sh
+
+Connect to kcat in Docker
+docker exec -it kcat bash
+kafkacat -b broker-2:9092 -L
+
+
+-----------------------
+
+apt-get install kafkacat
 
 
 
