@@ -8,10 +8,10 @@ Connect to kcat in Docker
 docker exec -it kcat bash
 kafkacat -b broker-2:9092 -L
 
+Kcat Lokal
+apt-get install kafkacat
 
 -----------------------
-
-apt-get install kafkacat
 
 
 
