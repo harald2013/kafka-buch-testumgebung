@@ -1,0 +1,4 @@
+docker exec --workdir /opt/kafka/bin/ -it broker-1 sh
+
+
+
